@@ -1,0 +1,8 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "mymathfun.h": "c",
+        "advencedclassificatinrecursion.h": "c",
+        "advencedclassificationloop.h": "c"
+    }
+}
