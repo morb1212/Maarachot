@@ -9,6 +9,7 @@ int main() {
    printf("Please insert two native numbers");
    int x,y;
    scanf("%d %d",&x,&y);
+   if(x!=y){
    int big=max(x,y);
    int small=min(x,y);
    printf("The Armstrong numbers are:");
@@ -27,7 +28,7 @@ for (int i=small;i<=big;i++){
    for (int i=small;i<=big;i++){
       printf(" "+isStrong(i));
    }
-
+   }
 
    return 0;
 }
