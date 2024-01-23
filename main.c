@@ -11,21 +11,21 @@ int main() {
    scanf("%d %d",&x,&y);
    int big=max(x,y);
    int small=min(x,y);
-   printf("The Armstrong numbers are: ");
+   printf("The Armstrong numbers are:");
    for (int i=small;i<=big;i++){
-   printf(isArmstrong(i)+" ");
+   printf(" "+isArmstrong(i));
    }
-   printf("The Palindromes are: ");
+   printf("The Palindromes are:");
 for (int i=small;i<=big;i++){
-      printf(isPalindrom(i)+" ");
+      printf(" "+isPalindrom(i));
    }
-   printf("The Prime numbers are: ");
+   printf("The Prime numbers are:");
    for (int i=small;i<=big;i++){
-      printf(isPrime(i)+" ");
+      printf(" "+isPrime(i));
    }
-   printf("The Strong numbers are: ");
+   printf("The Strong numbers are:");
    for (int i=small;i<=big;i++){
-      printf(isStrong(i)+" ");
+      printf(" "+isStrong(i));
    }
 
 
