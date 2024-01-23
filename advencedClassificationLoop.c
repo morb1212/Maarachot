@@ -1,6 +1,7 @@
 //
 // Created by mor on 1/23/24.
 //
+#include <stdio.h>
 #include "MyMathFun.h"
 #include "advencedClassificationLoop.h"
     int isPalindrom(int number) {

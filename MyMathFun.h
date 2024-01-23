@@ -11,6 +11,8 @@ int numDIg(int);
 int pow(int,int);
 int factorial(int);
 int getDigit(int,int);
+int max(int x,int y);
+int min(int x, int y);
 };
 
 

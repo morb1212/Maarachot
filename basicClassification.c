@@ -1,6 +1,7 @@
 //
 // Created by mor on 1/23/24.
 //
+#include <stdio.h>
 #include "MyMathFun.h"
 #include "basicClassification.h"
     int isPrime(int num){

@@ -3,6 +3,7 @@
     "files.associations": {
         "mymathfun.h": "c",
         "advencedclassificatinrecursion.h": "c",
-        "advencedclassificationloop.h": "c"
+        "advencedclassificationloop.h": "c",
+        "basicclassification.h": "c"
     }
 }

@@ -3,7 +3,6 @@
 //
 
 #include "MyMathFun.h"
-class MyMathFun{
 int numDIg(int num) {
     int digits=0;
     while (num > 0) {
@@ -33,4 +32,15 @@ int numDIg(int num) {
     }
     return mult;
 }
-}
+ int max(int x, int y){
+    if (x>y){
+    return x;
+    }
+    return y;
+ }
+  int min(int x, int y){
+    if (x<y){
+    return x;
+    }
+    return y;
+ }
