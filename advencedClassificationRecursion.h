@@ -7,5 +7,5 @@
     int isPalindrom(int x);
     int isPalindromHelp(int x,int y,int z);
     int isArmstrong(int x);
-    int isArmstrongHelp(int x,int y,int z);
+    int isArmStrongHelp(int x,int y,int z);
 #endif //UNTITLED_ADVENCEDCLASSIFICATINRECURSION_H

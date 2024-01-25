@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include "MyMathFun.h"
 #include "advencedClassificationLoop.h"
+#include "basicClassification.h"
+#include "NumClass.h"
     int isPalindrom(int number) {
         int startnum = number;
         int reversnum = 0;
@@ -22,7 +24,7 @@
         int digits=numDIg(num);
         for(int i=0;i<digits;i++){
             int dig = getDigit(num,i);
-            sum = sum+pow(dig,digits);
+            sum = sum+(int)pow(dig,digits);
         }
         return(sum==num);
     }

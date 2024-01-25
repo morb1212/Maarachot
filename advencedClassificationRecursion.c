@@ -3,7 +3,9 @@
 //
 #include <stdio.h>
 #include "MyMathFun.h"
-#include "advencedClassificatinRecursion.h"
+#include "advencedClassificationRecursion.h"
+#include "basicClassification.h"
+#include "NumClass.h"
     int isPalindrom(int num){
         int digits=numDIg(num);
         return isPalindromHelp(num,0,digits-1);
@@ -18,12 +20,12 @@
     }
     int isArmstrong(int num){
         int digits=numDIg(num);
-        int result= (isArmStrongHelp(num,digits,0)==num);
-        return result;
+        int result= (isArmStrongHelp(num,digits,0));
+        return result==num;
     }
-    int isArmstrongHelp(int num,int dig,int sum){
+    int isArmStrongHelp(int num,int dig,int sum){
         if (numDIg(num)==1)
-            return sum+pow(num,dig);
-        sum=sum+pow(num%10,dig);
-        return isArmstrongHelp(num/10,dig,sum);
+            return sum+(int)pow(num,dig);
+        sum=sum+(int)pow(num%10,dig);
+        return isArmStrongHelp(num/10,dig,sum);
     }

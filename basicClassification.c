@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include "MyMathFun.h"
 #include "basicClassification.h"
+#include "NumClass.h"
     int isPrime(int num){
         if (num<2){
             return 0;
