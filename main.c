@@ -13,19 +13,19 @@ int main() {
    int small=min(x,y);
    printf("The Armstrong numbers are:");
    for (int i=small;i<=big;i++){
-   printf(" "+isArmstrong(i));
+   printf("/t"+isArmstrong(i));
    }
-   printf("The Palindromes are:");
+   printf("/nThe Palindromes are:");
 for (int i=small;i<=big;i++){
-      printf(" "+isPalindrom(i));
+      printf("/t"+isPalindrom(i));
    }
-   printf("The Prime numbers are:");
+   printf("/nThe Prime numbers are:");
    for (int i=small;i<=big;i++){
-      printf(" "+isPrime(i));
+      printf("/t"+isPrime(i));
    }
-   printf("The Strong numbers are:");
+   printf("/nThe Strong numbers are:");
    for (int i=small;i<=big;i++){
-      printf(" "+isStrong(i));
+      printf("/t"+isStrong(i));
    }
    
    return 0;
