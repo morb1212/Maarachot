@@ -19,7 +19,7 @@
 int isStrong(int num){
     int originalnum=num;
     int sum=0;
-    int digits=numDIg(num);
+    int digits=numDig(num);
     for (int i=0;i<digits;i++){
        sum += factorial(num%10);
         num=num/10;

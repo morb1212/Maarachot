@@ -4,7 +4,7 @@
 
 #ifndef UNTITLED_MYMATHFUN_H
 #define UNTITLED_MYMATHFUN_H
-int numDIg(int);
+int numDig(int);
 double pow(double,double);
 int factorial(int);
 int getDigit(int,int);

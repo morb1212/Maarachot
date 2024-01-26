@@ -7,21 +7,21 @@
 #include "basicClassification.h"
 #include "NumClass.h"
     int isPalindrom(int number) {
-        int startnum = number;
-        int reversnum = 0;
-        while (number > 0) {
-            int digit = number % 10;
-            reversnum = reversnum * 10 + digit;
-            number / 10;
-        }
-        if (reversnum == startnum)
-            return 1;
-        return 0;
+    int startnum = number;
+    int reversnum = 0;
+    while (number > 0) {
+        int digit = number % 10;
+        reversnum = reversnum * 10 + digit;
+        number /= 10; 
     }
+    if (reversnum == startnum)
+        return 1;
+    return 0;
+}
 
     int isArmstrong(int num){
         int sum=0;
-        int digits=numDIg(num);
+        int digits=numDig(num);
         for(int i=0;i<digits;i++){
             int dig = getDigit(num,i);
             sum = sum+(int)pow(dig,digits);

@@ -7,7 +7,7 @@
 #include "basicClassification.h"
 #include "NumClass.h"
     int isPalindrom(int num){
-        int digits=numDIg(num);
+        int digits=numDig(num);
         return isPalindromHelp(num,0,digits-1);
     }
     int isPalindromHelp(int num,int i,int j){
@@ -19,12 +19,12 @@
         return isPalindromHelp( num, i+1, j-1);
     }
     int isArmstrong(int num){
-        int digits=numDIg(num);
+        int digits=numDig(num);
         int result= (isArmStrongHelp(num,digits,0));
         return result==num;
     }
     int isArmStrongHelp(int num,int dig,int sum){
-        if (numDIg(num)==1)
+        if (numDig(num)==1)
             return sum+(int)pow(num,dig);
         sum=sum+(int)pow(num%10,dig);
         return isArmStrongHelp(num/10,dig,sum);

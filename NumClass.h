@@ -10,7 +10,7 @@ int isArmstrong(int);
 int isPalindrome(int);
 int isPrime(int);
 int isStrong(int);
-int numDIg(int);
+int numDig(int);
 double pow(double,double);
 int factorial(int);
 int getDigit(int,int);

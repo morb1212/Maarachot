@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include "MyMathFun.h"
 #include "NumClass.h"
-int numDIg(int num) {
+int numDig(int num) {
     int digits=0;
     while (num > 0) {
         digits++;
@@ -18,14 +18,16 @@ int numDIg(int num) {
     }
     return num;
 }
-    int getDigit(int num,int i){
-    int length=numDIg(num);
-    for (int j=length-1; j>=0;j--){
-        if (j==i)
-        return num%10;
-       num= num/10;
+  int getDigit(int num, int i) {
+    int length = numDig(num);
+    for (int j = length - 1; j >= 0; j--) {
+        if (j == i)
+            return num % 10;
+        num /= 10;
     }
-}
+    return -1; 
+    }
+
     double pow(double num,double pow){
     double mult=1;
     for(int i=1;i<=pow;i++){
