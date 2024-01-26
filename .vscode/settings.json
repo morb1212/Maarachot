@@ -4,6 +4,7 @@
         "mymathfun.h": "c",
         "advencedclassificatinrecursion.h": "c",
         "advencedclassificationloop.h": "c",
-        "basicclassification.h": "c"
+        "basicclassification.h": "c",
+        "numclass.h": "c"
     }
 }

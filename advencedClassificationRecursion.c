@@ -29,3 +29,4 @@
         sum=sum+(int)pow(num%10,dig);
         return isArmStrongHelp(num/10,dig,sum);
     }
+   
