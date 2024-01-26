@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS= -Wall -g
 
-all: loops recursives recursived loopd mains maindloop maindrec
+all: mains maindloop maindrec loops loopd recursived recursives
 
 loops: libclassloops.a
 
@@ -25,19 +25,19 @@ maindrec: main.o libclassrec.so MyMathFun.o basicClassification.o
 clean:
 	rm -f *.o mains maindloop maindrec libclassrec.so libclassloops.so
 
-libclassloops.a: loop.o MyMathFun.o
-	ar rcs $@ loop.o MyMathFun.o
+libclassloops.a: loop.o MyMathFun.o basicClassification.o
+	ar rcs $@ loop.o MyMathFun.o basicClassification.o
 	ranlib $@
 
-libclassrec.a: recursive.o MyMathFun.o
-	ar rcs $@ recursive.o MyMathFun.o
+libclassrec.a: recursive.o MyMathFun.o basicClassification.o
+	ar rcs $@ recursive.o MyMathFun.o basicClassification.o
 	ranlib $@
 
-libclassrec.so: recursive.o MyMathFun.o
-	$(CC) -shared -o $@ recursive.o MyMathFun.o
+libclassrec.so: recursive.o MyMathFun.o basicClassification.o
+	$(CC) -shared -o $@ recursive.o MyMathFun.o basicClassification.o
 
-libclassloops.so: loop.o MyMathFun.o
-	$(CC) -shared -o $@ loop.o MyMathFun.o
+libclassloops.so: loop.o MyMathFun.o basicClassification.o
+	$(CC) -shared -o $@ loop.o MyMathFun.o basicClassification.o
 
 main.o: main.c advencedClassificationRecursion.h advencedClassificationLoop.h MyMathFun.h basicClassification.h NumClass.h
 	$(CC) -c -o $@ main.c $(CFLAGS)
@@ -53,3 +53,9 @@ advencedClassificationRecursion.o: advencedClassificationRecursion.c advencedCla
 
 advencedClassificationLoop.o: advencedClassificationLoop.c advencedClassificationLoop.h MyMathFun.h basicClassification.h NumClass.h
 	$(CC) -c -o $@ advencedClassificationLoop.c $(CFLAGS)
+
+MyMathFun.o: MyMathFun.c MyMathFun.h
+	$(CC) -c -o $@ MyMathFun.c $(CFLAGS)
+
+basicClassification.o: basicClassification.c basicClassification.h
+	$(CC) -c -o $@ basicClassification.c $(CFLAGS)
