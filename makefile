@@ -52,4 +52,4 @@ advencedClassificationRecursion.o: advencedClassificationRecursion.c advencedCla
 	$(CC) -c -o $@ advencedClassificationRecursion.c $(CFLAGS)
 
 advencedClassificationLoop.o: advencedClassificationLoop.c advencedClassificationLoop.h MyMathFun.h basicClassification.h NumClass.h
-	$(CC) -c -o $@ advencedClassificationLoop.c $(CFLAGS
+	$(CC) -c -o $@ advencedClassificationLoop.c $(CFLAGS)
