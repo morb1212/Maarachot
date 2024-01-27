@@ -1,12 +1,13 @@
 //
 // Created by mor on 1/23/24.
 //
-
 #ifndef UNTITLED_NUMCLASS_H
 #define UNTITLED_NUMCLASS_H
 #define true 1
 #define false 0
 int isArmstrong(int);
+int isPalindromeHelp(int x,int y,int z);
+int isArmStrongHelp(int x,int y,int z);
 int isPalindrome(int);
 int isPrime(int);
 int isStrong(int);

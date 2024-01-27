@@ -6,17 +6,17 @@
 #include "advencedClassificationRecursion.h"
 #include "basicClassification.h"
 #include "NumClass.h"
-    int isPalindrom(int num){
+    int isPalindrome(int num){
         int digits=numDig(num);
-        return isPalindromHelp(num,0,digits-1);
+        return isPalindromeHelp(num,0,digits-1);
     }
-    int isPalindromHelp(int num,int i,int j){
+    int isPalindromeHelp(int num,int i,int j){
         if (i==j || j < i)
             return 1;
 
         if (getDigit(num,i)!=getDigit(num,j))
             return 0;
-        return isPalindromHelp( num, i+1, j-1);
+        return isPalindromeHelp( num, i+1, j-1);
     }
     int isArmstrong(int num){
         int digits=numDig(num);

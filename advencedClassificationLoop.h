@@ -4,6 +4,6 @@
 
 #ifndef UNTITLED_ADVENCEDCLASSIFICATIONLOOP_H
 #define UNTITLED_ADVENCEDCLASSIFICATIONLOOP_H
-int isPalindrom(int x);
+int isPalindrome(int x);
 int isArmstrong(int x);
 #endif //UNTITLED_ADVENCEDCLASSIFICATIONLOOP_H

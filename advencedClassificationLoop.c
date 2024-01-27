@@ -6,7 +6,7 @@
 #include "advencedClassificationLoop.h"
 #include "basicClassification.h"
 #include "NumClass.h"
-    int isPalindrom(int number) {
+    int isPalindrome(int number) {
     int startnum = number;
     int reversnum = 0;
     while (number > 0) {
