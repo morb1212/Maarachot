@@ -6,7 +6,7 @@
 #include "NumClass.h"
 
 int main() {
-    printf("Please insert two native numbers: ");
+    printf("Please insert two native numbers:");
     int x, y;
     scanf("%d %d", &x, &y);
     int big = max(x, y);
@@ -29,7 +29,7 @@ int main() {
     printf("\nThe Strong numbers are:");
     for (int i = small; i <= big; i++) {
         if (isStrong(i))
-            printf(" %d", i); 
+            printf(" %d", i);
     }
     printf("\n");
     return 0;
